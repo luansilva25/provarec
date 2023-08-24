@@ -11,7 +11,17 @@
     */
 
     //ENTRADA
+const turno = prompt('informe o turno que voce trabalha (M-matutino V-vespertino N-noturno)').toLowerCase().trim()
 
+if(turno == 'm'){
+    alert("O seu turno de trabalho é das 05:00 - 13:00")
+}
+else if(turno == 'v'){
+    alert("O seu turno de trabalho é das 13:00 - 22:00")
+}
+else if(turno == 'n'){
+    alert("O seu turno de trabalho é das 22:00 - 05:00")
+}
 
     //PROCESSAMENTO
 

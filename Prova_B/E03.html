@@ -10,10 +10,21 @@
     */
 
     //ENTRADA
-
+const dias= parseInt(prompt('quantos dias voce ficara com o carro'))
+let calculo = 0
 
     //PROCESSAMENTO
-
+if(dias <= 5){
+    calculo = dias * 90
+    alert(` voce não sofrera alterações e voce ficara ${dias} dias com o carro e tera que pagar  R$ ${calculo}`)
+}
+else if(dias > 5){
+    calculo = (dias*80)
+    alert(`voce ficara ${dias} dias com o carro e tera que pagar  R$ ${calculo}`)
+}
+else{
+    alert('valor invalido')
+}
 
     //SAÍDA
 

@@ -8,10 +8,18 @@
     */
 
     //ENTRADA
-
+const notas1= Number(prompt('informe sua nota do primerio trimestre'))
+const notas2= Number(prompt('informe sua nota do segundo trimestre'))
+const notas3= Number(prompt('informe sua nota do terceiro trimestre'))
+const media= (notas1+notas2+notas3)/3
 
     //PROCESSAMENTO
-
+if(media >= 6){
+    alert(`voce conseguiu ficar na média ${media.toFixed(1)}`)
+}
+else{
+    alert(`voce não conseguiu ficar na media sua nota foi de ${media.toFixed(1)}`)
+}
 
     //SAÍDA
 

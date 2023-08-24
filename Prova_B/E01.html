@@ -8,10 +8,13 @@
     */
 
     //ENTRADA
-
+const valor= Number(prompt('informe o valor do veiculo').replace(',','.'))
+let entrada = 5000
+const financiado= (valor- entrada)
+const parcela =  (financiado*1.25)/48
 
     //PROCESSAMENTO
-
+alert(`o valor do veiculo é de R$ ${valor.toFixed(2).replace('.',',')} O valor financiado foi de R$ ${financiado.toFixed(2).replace('.', ',')}. O valor de cada parcela é de R$ ${parcela.toFixed(2).replace('.',',')}`)
 
     //SAÍDA
 
